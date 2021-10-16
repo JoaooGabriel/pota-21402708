@@ -3,10 +3,11 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class App {
-  private static Client[] clients = new Client[4];
+  private static Client[] clients = new Client[5825];
 
   public static void main(String[] args) throws Exception {
     readFile();
+
     Scanner keyboard = new Scanner(System.in);
     BuscaBinaria find = new BuscaBinaria(clients);
 
@@ -21,7 +22,7 @@ public class App {
             name = keyboard.nextLine();
           }
 
-          System.out.println(find.find(name));
+          System.out.println(find.buscaBinaria(name, 0, clients.length));
           break;
 
         case 2:
@@ -40,7 +41,7 @@ public class App {
   public static int selectOperation() {
     Scanner keyboard = new Scanner(System.in);
 
-    System.out.println("O que deseja fazer?" + "\n" + "1 - Buscar cliente" + "\n" + "2 - Sair");
+    System.out.println("O que deseja fazer?\n" + "1 - Buscar cliente\n" + "2 - Sair");
 
     int operations = keyboard.nextInt();
 
