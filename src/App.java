@@ -40,10 +40,18 @@ public class App {
 
   public static int selectOperation() {
     Scanner keyboard = new Scanner(System.in);
+    int operations = 0;
 
-    System.out.println("O que deseja fazer?\n" + "1 - Buscar cliente\n" + "2 - Sair");
+    System.out.println("O que deseja fazer?\n" + "Digite pesquisa - Pesquisar cliente\n" + "Digite exit - Sair");
+    String menu = keyboard.nextLine();
 
-    int operations = keyboard.nextInt();
+    if (menu.equals("pesquisa")) {
+      operations = 1;
+    }
+
+    if (menu.equals("exit")) {
+      operations = 2;
+    }
 
     return operations;
   }
