@@ -76,3 +76,20 @@ public class App {
     }
   }
 }
+
+/*
+  Alunos: [
+    {
+      "Nome": "Felippe dos Santos Vilas Boas",
+      "RA": 21463728
+    },
+    {
+      "Nome": "João Gabriel de Souza Caetano",
+      "RA": 21402708
+    },
+    {
+      "Nome": "Tiago Turola Bianezi",
+      "RA": 21476048 
+    }
+  ]
+*/
